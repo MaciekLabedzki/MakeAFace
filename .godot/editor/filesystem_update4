@@ -1,0 +1,9 @@
+res://scenes/World.tscn
+res://Models/tileset.tres
+res://scenes/Player.tscn
+res://scenes/tiles.tscn
+res://scenes/aPlayer.tscn
+res://scenes/player.tscn
+res://scenes/Labirynth.tscn
+res://scenes/scream.tscn
+res://scenes/player.gd

@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://csete6xehlyas"]
+
+[ext_resource type="Script" path="res://scenes/player.gd" id="1_m2s8m"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tfvh7"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_m2s8m")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 1.5, 0)
+shape = SubResource("CapsuleShape3D_tfvh7")
+
+[node name="CameraPivot" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.06638, -0.132823)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="CameraPivot/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.06638, 0.132823)
+light_color = Color(0.384314, 0.203922, 0.192157, 1)
+light_energy = 2.0
+light_indirect_energy = 2.0
+light_volumetric_fog_energy = 2.0
+light_specular = 2.0
+spot_range = 10.0
