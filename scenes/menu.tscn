@@ -1,6 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://b3xmgww7h1p3o"]
+[gd_scene load_steps=20 format=3 uid="uid://b3xmgww7h1p3o"]
 
 [ext_resource type="Texture2D" uid="uid://bl5wld8ve6i0g" path="res://Textures/kenney_particle-pack/fire_01.png" id="1_p2hnx"]
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_tyrkr"]
 [ext_resource type="Texture2D" uid="uid://be38qajirbu8p" path="res://Textures/UI/menu.png" id="2_hjx2a"]
 [ext_resource type="Script" path="res://scripts/Start.gd" id="3_2mbb4"]
 [ext_resource type="Script" path="res://exit.gd" id="4_wrt7d"]
@@ -97,6 +98,7 @@ sub_emitter_keep_velocity = true
 [sub_resource type="QuadMesh" id="QuadMesh_p4qjl"]
 
 [node name="Menu" type="Node3D"]
+script = ExtResource("1_tyrkr")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_cue7u")

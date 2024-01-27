@@ -1,2 +1,14 @@
-res://scenes/scream.tscn
 res://Models/tileset.tres
+res://error.txt
+res://scenes/won.tscn
+res://scenes/tiles.tscn
+res://scenes/altar.tscn
+res://scenes/ui.tscn
+res://scenes/player.tscn
+res://scenes/scream.tscn
+res://scenes/menu.tscn
+res://scenes/won_UI.tscn
+res://scenes/Labirynth.tscn
+res://scripts/altar.gd
+res://exit.gd
+res://scripts/scream.gd

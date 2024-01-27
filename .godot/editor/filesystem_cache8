@@ -1,29 +1,34 @@
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1706280658
-0.png::CompressedTexture2D::9214691871758002004::1706368308::1706368322::1::::<><>::
-error.txt::TextFile::-1::1706368326::0::1::::<><>::
-exit.gd::GDScript::-1::1706365718::0::1::::<>Button<>::
+0.png::CompressedTexture2D::9214691871758002004::1706381474::1706381514::1::::<><>::
+error.txt::TextFile::-1::1706381510::0::1::::<><>::
+exit.gd::GDScript::-1::1706378164::0::1::::<>Button<>::
 icon.svg::CompressedTexture2D::8615905336263135130::1706280472::1706280482::1::::<><>::
+won.gd::GDScript::-1::1706377172::0::1::::<>Control<>::
 ::res://CameraProcessing/::1706340768
 ::res://Models/::1706291966
 tiles.glb::PackedScene::3856729360277091066::1706301186::1706301188::1::::<><>::uid://dykueqd5emimf::::res://Models/tiles_Cobble.jpg<>uid://d1iy7a3ba7po3::::res://Models/tiles_Cobble_NM (1).png
-tileset.tres::MeshLibrary::3051411807535359254::1706358178::0::1::::<><>::uid://dykueqd5emimf::::res://Models/tiles_Cobble.jpg<>uid://d1iy7a3ba7po3::::res://Models/tiles_Cobble_NM (1).png
+tileset.tres::MeshLibrary::3051411807535359254::1706377892::0::1::::<><>::uid://dykueqd5emimf::::res://Models/tiles_Cobble.jpg<>uid://d1iy7a3ba7po3::::res://Models/tiles_Cobble_NM (1).png
 tiles_Cobble.jpg::CompressedTexture2D::8865660405340531933::1706300596::1706300598::1::::<><>::
 tiles_Cobble_NM (1).png::CompressedTexture2D::9002201404233209812::1706300596::1706300598::1::::<><>::
 ::res://scenes/::1706300720
-altar.tscn::PackedScene::1387622406022530997::1706368302::0::1::::<><>::uid://d0sc3dpxsuk5k::::res://Textures/kenney_particle-pack/light_01.png<>res://scripts/altar.gd
-Labirynth.tscn::PackedScene::7173859739650587489::1706367742::0::1::::<><>::uid://bjqekoqx2axms::::res://Models/tileset.tres<>uid://csete6xehlyas::::res://scenes/player.tscn<>uid://kkrs3wqgc73c::::res://scenes/scream.tscn<>uid://t1f65ww0hlll::::res://scenes/altar.tscn
-menu.tscn::PackedScene::4399929503541738050::1706368046::0::1::::<><>::uid://bl5wld8ve6i0g::::res://Textures/kenney_particle-pack/fire_01.png<>uid://be38qajirbu8p::::res://Textures/UI/menu.png<>res://scripts/Start.gd<>res://exit.gd
-player.tscn::PackedScene::6045660493871118714::1706367740::0::1::::<><>::res://scripts/player.gd
-scream.tscn::PackedScene::723598052462842154::1706368352::0::1::::<><>::res://scripts/scream.gd<>uid://bl5wld8ve6i0g::::res://Textures/kenney_particle-pack/fire_01.png
-tiles.tscn::PackedScene::5271974710735158546::1706368302::0::1::::<><>::uid://bu7h1fciyp3as::::res://Models/tiles.glb
-ui.tscn::PackedScene::8155719903319177930::1706368302::0::1::::<><>::uid://b3nj0er24b8x6::::res://Textures/UI/03.png<>uid://bljigcc5lsy3l::::res://Textures/UI/13.png<>uid://b1mt7b4j1g4kk::::res://Textures/UI/23.png<>uid://cm5b5bbwc5c76::::res://Textures/UI/33.png<>uid://b7t25jqtyc48o::::res://Textures/UI/e.png<>uid://bywwbkfjd0i62::::res://Textures/UI/3.png<>uid://dp51ues0iplwe::::res://Textures/UI/2.png<>uid://dafj2kc5dvusr::::res://Textures/UI/1.png<>uid://dhdj4es6xgcu3::::res://Textures/UI/face.png<>uid://uof2ebgw0os6::::res://Textures/UI/laugh.png<>uid://ci8er5mmv0b5y::::res://Textures/UI/scare.png<>uid://du0ux4u5pfbb3::::res://icon.svg
-World.tscn::PackedScene::5795331137529510121::1706368302::0::1::::<><>::res://scripts/World.gd<>uid://dahcolul45byn::::res://scenes/Labirynth.tscn<>uid://dogxrrvcshe4i::::res://scenes/ui.tscn
+altar.tscn::PackedScene::1387622406022530997::1706381464::0::1::::<><>::uid://d0sc3dpxsuk5k::::res://Textures/kenney_particle-pack/light_01.png<>res://scripts/altar.gd
+Labirynth.tscn::PackedScene::7173859739650587489::1706378092::0::1::::<><>::uid://bjqekoqx2axms::::res://Models/tileset.tres<>uid://csete6xehlyas::::res://scenes/player.tscn<>uid://kkrs3wqgc73c::::res://scenes/scream.tscn<>uid://t1f65ww0hlll::::res://scenes/altar.tscn
+menu.tscn::PackedScene::4399929503541738050::1706381464::0::1::::<><>::uid://bl5wld8ve6i0g::::res://Textures/kenney_particle-pack/fire_01.png<>res://scripts/menu.gd<>uid://be38qajirbu8p::::res://Textures/UI/menu.png<>res://scripts/Start.gd<>res://exit.gd
+player.tscn::PackedScene::6045660493871118714::1706381464::0::1::::<><>::res://scripts/player.gd
+won.tscn::PackedScene::6488670285228030805::1706378092::0::1::::<><>::uid://i4twug0f5fw::::res://scenes/won_UI.tscn
+scream.tscn::PackedScene::723598052462842154::1706381464::0::1::::<><>::res://scripts/scream.gd<>uid://bl5wld8ve6i0g::::res://Textures/kenney_particle-pack/fire_01.png
+tiles.tscn::PackedScene::5271974710735158546::1706381464::0::1::::<><>::uid://bu7h1fciyp3as::::res://Models/tiles.glb
+ui.tscn::PackedScene::8155719903319177930::1706381464::0::1::::<><>::uid://b3nj0er24b8x6::::res://Textures/UI/03.png<>uid://bljigcc5lsy3l::::res://Textures/UI/13.png<>uid://b1mt7b4j1g4kk::::res://Textures/UI/23.png<>uid://cm5b5bbwc5c76::::res://Textures/UI/33.png<>uid://b7t25jqtyc48o::::res://Textures/UI/e.png<>uid://bywwbkfjd0i62::::res://Textures/UI/3.png<>uid://dp51ues0iplwe::::res://Textures/UI/2.png<>uid://dafj2kc5dvusr::::res://Textures/UI/1.png<>uid://dhdj4es6xgcu3::::res://Textures/UI/face.png<>uid://uof2ebgw0os6::::res://Textures/UI/laugh.png<>uid://ci8er5mmv0b5y::::res://Textures/UI/scare.png<>uid://cedg5tt0hi1jf::::res://Textures/UI/spared.png<>uid://df88rvsp2umlx::::res://Textures/UI/dead.png<>uid://dvt22rt1x8vmd::::res://Textures/UI/no escape.png<>uid://c4t8bv73lvvxm::::res://Textures/UI/won.png<>uid://bedf7e0hhf5m4::::res://Textures/UI/intro.png
+won_UI.tscn::PackedScene::18310931622942512::1706378092::0::1::::<><>::uid://dogxrrvcshe4i::::res://scenes/ui.tscn<>res://won.gd
+World.tscn::PackedScene::5795331137529510121::1706376196::0::1::::<><>::res://scripts/World.gd<>uid://dahcolul45byn::::res://scenes/Labirynth.tscn<>uid://dogxrrvcshe4i::::res://scenes/ui.tscn
 ::res://scripts/::1706340168
-altar.gd::GDScript::-1::1706368000::0::1::::<>Area3D<>::
-player.gd::GDScript::-1::1706353806::0::1::::<>CharacterBody3D<>::
-scream.gd::GDScript::-1::1706368300::0::1::::<>Node3D<>::
-Start.gd::GDScript::-1::1706366456::0::1::::<>Button<>::
+altar.gd::GDScript::-1::1706378148::0::1::::<>Area3D<>::
+menu.gd::GDScript::-1::1706376654::0::1::::<>Node3D<>::
+player.gd::GDScript::-1::1706373724::0::1::::<>CharacterBody3D<>::
+scream.gd::GDScript::-1::1706378912::0::1::::<>Node3D<>::
+Start.gd::GDScript::-1::1706376196::0::1::::<>Button<>::
+won.gd::GDScript::-1::1706376128::0::1::::<>Node3D<>::
 World.gd::GDScript::-1::1706358178::0::1::::<>Node3D<>::
 ::res://Textures/::1706291004
 Atlas.png::CompressedTexture2D::5468552382454523287::1706292864::1706300596::1::::<><>::
@@ -59,11 +64,15 @@ smoke_08.png::CompressedTexture2D::2663202506535825536::1573695368::1706304760::
 13.png::CompressedTexture2D::3177573923718364067::1706362482::1706362732::1::::<><>::
 23.png::CompressedTexture2D::4237314017364791298::1706362496::1706362732::1::::<><>::
 33.png::CompressedTexture2D::5677153169545886455::1706362508::1706362732::1::::<><>::
+dead.png::CompressedTexture2D::7580365885926359533::1706372756::1706372764::1::::<><>::
 e.png::CompressedTexture2D::4673380288381594836::1706362520::1706362732::1::::<><>::
 face.png::CompressedTexture2D::7657375570105202124::1706362462::1706362732::1::::<><>::
 i hunt you.png::CompressedTexture2D::927958061107978899::1706362344::1706362732::1::::<><>::
+intro.png::CompressedTexture2D::2673730170917343845::1706378824::1706378832::1::::<><>::
 laugh.png::CompressedTexture2D::1433030174657965411::1706362404::1706362732::1::::<><>::
 menu.png::CompressedTexture2D::2727010883112180377::1706362324::1706362732::1::::<><>::
 no escape.png::CompressedTexture2D::8674139443506860519::1706362390::1706362732::1::::<><>::
 scare.png::CompressedTexture2D::5402751403654313136::1706362414::1706362732::1::::<><>::
+spared.png::CompressedTexture2D::5060208779414778031::1706372746::1706372764::1::::<><>::
 u hunt me.png::CompressedTexture2D::2509622425965747592::1706362374::1706362732::1::::<><>::
+won.png::CompressedTexture2D::6849547610483311558::1706373272::1706373278::1::::<><>::

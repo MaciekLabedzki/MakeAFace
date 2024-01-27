@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dogxrrvcshe4i"]
+[gd_scene load_steps=17 format=3 uid="uid://dogxrrvcshe4i"]
 
 [ext_resource type="Texture2D" uid="uid://b3nj0er24b8x6" path="res://Textures/UI/03.png" id="1_e3rq5"]
 [ext_resource type="Texture2D" uid="uid://bljigcc5lsy3l" path="res://Textures/UI/13.png" id="2_rkfsm"]
@@ -11,7 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://dhdj4es6xgcu3" path="res://Textures/UI/face.png" id="9_2qqhi"]
 [ext_resource type="Texture2D" uid="uid://uof2ebgw0os6" path="res://Textures/UI/laugh.png" id="10_4knys"]
 [ext_resource type="Texture2D" uid="uid://ci8er5mmv0b5y" path="res://Textures/UI/scare.png" id="11_pmce6"]
-[ext_resource type="Texture2D" uid="uid://du0ux4u5pfbb3" path="res://icon.svg" id="12_dlewv"]
+[ext_resource type="Texture2D" uid="uid://cedg5tt0hi1jf" path="res://Textures/UI/spared.png" id="12_l80yk"]
+[ext_resource type="Texture2D" uid="uid://df88rvsp2umlx" path="res://Textures/UI/dead.png" id="13_1cyuq"]
+[ext_resource type="Texture2D" uid="uid://dvt22rt1x8vmd" path="res://Textures/UI/no escape.png" id="14_b7j5g"]
+[ext_resource type="Texture2D" uid="uid://c4t8bv73lvvxm" path="res://Textures/UI/won.png" id="15_qb2hg"]
+[ext_resource type="Texture2D" uid="uid://bedf7e0hhf5m4" path="res://Textures/UI/intro.png" id="16_1o3c3"]
 
 [node name="UI" type="CanvasLayer"]
 
@@ -118,11 +122,29 @@ expand_mode = 1
 [node name="spared" type="TextureRect" parent="Control/scream"]
 visible = false
 layout_mode = 2
-texture = ExtResource("12_dlewv")
+texture = ExtResource("12_l80yk")
 expand_mode = 1
 
 [node name="died" type="TextureRect" parent="Control/scream"]
 visible = false
 layout_mode = 2
-texture = ExtResource("12_dlewv")
+texture = ExtResource("13_1cyuq")
+expand_mode = 1
+
+[node name="noexit" type="TextureRect" parent="Control/scream"]
+visible = false
+layout_mode = 2
+texture = ExtResource("14_b7j5g")
+expand_mode = 1
+
+[node name="won" type="TextureRect" parent="Control/scream"]
+visible = false
+layout_mode = 2
+texture = ExtResource("15_qb2hg")
+expand_mode = 1
+
+[node name="intro" type="TextureRect" parent="Control/scream"]
+visible = false
+layout_mode = 2
+texture = ExtResource("16_1o3c3")
 expand_mode = 1

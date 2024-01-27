@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cypfpmblpxdwv"]
+
+[ext_resource type="PackedScene" uid="uid://i4twug0f5fw" path="res://scenes/won_UI.tscn" id="1_l8s41"]
+
+[node name="Won" type="Node3D"]
+
+[node name="Control" parent="." instance=ExtResource("1_l8s41")]

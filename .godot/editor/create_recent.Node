@@ -1,3 +1,5 @@
+Node3D
+Marker3D
 PanelContainer
 Container
 Button
@@ -11,5 +13,3 @@ StaticBody3D
 OmniLight3D
 CollisionShape3D
 Area3D
-Sprite3D
-Sprite2D
