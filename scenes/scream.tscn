@@ -1,21 +1,19 @@
 [gd_scene load_steps=15 format=3 uid="uid://kkrs3wqgc73c"]
 
+[ext_resource type="Script" path="res://scripts/scream.gd" id="1_ow7q0"]
 [ext_resource type="Texture2D" uid="uid://bl5wld8ve6i0g" path="res://Textures/kenney_particle-pack/fire_01.png" id="1_uhgs7"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_5xpwo"]
-radius = 1.34295
-
-[sub_resource type="FogMaterial" id="FogMaterial_6jxas"]
+radius = 1.65247
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bivf"]
-next_pass = SubResource("FogMaterial_6jxas")
-transparency = 1
-blend_mode = 2
+transparency = 3
+alpha_hash_scale = 1.0
+alpha_antialiasing_mode = 0
+blend_mode = 3
+shading_mode = 0
 vertex_color_use_as_albedo = true
 albedo_texture = ExtResource("1_uhgs7")
-metallic = 0.38
-metallic_specular = 0.52
-roughness = 0.64
 billboard_mode = 1
 grow_amount = 1.967
 proximity_fade_distance = 45.77
@@ -26,7 +24,7 @@ max_value = 360.0
 _data = [Vector2(0, -206.551), 0.0, 0.0, 0, 0, Vector2(1, 307.63), 0.0, 0.0, 0, 0]
 point_count = 2
 
-[sub_resource type="CurveTexture" id="CurveTexture_sqvim"]
+[sub_resource type="CurveTexture" id="CurveTexture_6dw1m"]
 texture_mode = 1
 curve = SubResource("Curve_irb1u")
 
@@ -36,13 +34,13 @@ max_value = 360.0
 _data = [Vector2(0.0125392, -228.643), 0.0, 0.0, 0, 0, Vector2(0.376176, 220.125), 0.0, 0.0, 0, 0, Vector2(0.714734, -193.674), 0.0, 0.0, 0, 0, Vector2(0.978056, 301.719), 0.0, 0.0, 0, 0]
 point_count = 4
 
-[sub_resource type="CurveTexture" id="CurveTexture_nlsop"]
+[sub_resource type="CurveTexture" id="CurveTexture_lgvhe"]
 curve = SubResource("Curve_i5nrd")
 
 [sub_resource type="Gradient" id="Gradient_veup6"]
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_qlvpr"]
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_feuqv"]
 gradient = SubResource("Gradient_veup6")
 
 [sub_resource type="Curve" id="Curve_77a16"]
@@ -51,26 +49,26 @@ max_value = 2.0
 _data = [Vector2(0, -1.1731), 0.0, 0.0, 0, 0, Vector2(0.131661, 1.67621), 0.0, 0.0, 0, 0, Vector2(0.285266, -1.56164), 0.0, 0.0, 0, 0, Vector2(0.426332, 1.67621), 0.0, 0.0, 0, 0, Vector2(0.598746, -1.46451), 0.0, 0.0, 0, 0, Vector2(0.742947, 1.77335), 0.0, 0.0, 0, 0, Vector2(0.890282, -1.43213), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
 point_count = 8
 
-[sub_resource type="CurveTexture" id="CurveTexture_vxy2k"]
+[sub_resource type="CurveTexture" id="CurveTexture_w0lnj"]
 curve = SubResource("Curve_77a16")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cslyd"]
 lifetime_randomness = 0.08
 emission_shape = 1
-emission_sphere_radius = 0.5
+emission_sphere_radius = 0.8
 angle_min = -208.1
 angle_max = 316.3
-angle_curve = SubResource("CurveTexture_sqvim")
+angle_curve = SubResource("CurveTexture_6dw1m")
 angular_velocity_min = -274.68
 angular_velocity_max = 283.01
-angular_velocity_curve = SubResource("CurveTexture_nlsop")
+angular_velocity_curve = SubResource("CurveTexture_lgvhe")
 orbit_velocity_min = -0.1
 orbit_velocity_max = 0.1
-orbit_velocity_curve = SubResource("CurveTexture_vxy2k")
+orbit_velocity_curve = SubResource("CurveTexture_w0lnj")
 gravity = Vector3(0, -0.1, 0)
 scale_min = 0.0
 scale_max = 3.0
-color_ramp = SubResource("GradientTexture1D_qlvpr")
+color_ramp = SubResource("GradientTexture1D_feuqv")
 turbulence_enabled = true
 turbulence_noise_strength = 20.0
 turbulence_noise_scale = 2.335
@@ -84,17 +82,19 @@ sub_emitter_keep_velocity = true
 [sub_resource type="QuadMesh" id="QuadMesh_p4qjl"]
 
 [node name="Scream" type="Node3D"]
+script = ExtResource("1_ow7q0")
 
 [node name="CollisionShape3D" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.17918, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CollisionShape3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.458717, 0)
 shape = SubResource("SphereShape3D_5xpwo")
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000400782, 2.37075, 0.0391849)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000400782, 1.6978, 0.0391849)
 material_override = SubResource("StandardMaterial3D_1bivf")
-amount = 32
+amount = 64
 lifetime = 1.5
 randomness = 0.49
 fixed_fps = 60
@@ -104,3 +104,6 @@ draw_passes = 3
 draw_pass_1 = SubResource("QuadMesh_p4qjl")
 draw_pass_2 = null
 draw_pass_3 = null
+
+[connection signal="body_entered" from="CollisionShape3D" to="." method="_on_body_enterd_area"]
+[connection signal="body_exited" from="CollisionShape3D" to="." method="_on_body_exited_area"]

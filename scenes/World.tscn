@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cotki0idtxwcf"]
+[gd_scene load_steps=7 format=3 uid="uid://cotki0idtxwcf"]
 
+[ext_resource type="Script" path="res://scripts/World.gd" id="1_7npv5"]
 [ext_resource type="PackedScene" uid="uid://dahcolul45byn" path="res://scenes/Labirynth.tscn" id="1_wcqd8"]
+[ext_resource type="PackedScene" uid="uid://dogxrrvcshe4i" path="res://scenes/ui.tscn" id="3_enlxl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f6edh"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -21,8 +23,11 @@ sdfgi_enabled = true
 glow_enabled = true
 
 [node name="World" type="Node3D"]
+script = ExtResource("1_7npv5")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_x4xfq")
 
 [node name="GridMap" parent="." instance=ExtResource("1_wcqd8")]
+
+[node name="UI" parent="." instance=ExtResource("3_enlxl")]

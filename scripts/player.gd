@@ -14,6 +14,12 @@ func _ready():
 func _input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(deg_to_rad(event.relative.x*mouseSensitivity))
+		$CameraPivot.rotate_x(deg_to_rad(event.relative.y*mouseSensitivity))
+	if Input.get_joy_axis(0, JOY_AXIS_RIGHT_X) < -0.2 or Input.get_joy_axis(0, JOY_AXIS_RIGHT_X) > 0.2:
+		rotate_y(deg_to_rad( Input.get_joy_axis(0, 2) * -4.3 ))
+	if Input.get_joy_axis(0, JOY_AXIS_RIGHT_Y) < -0.2 or Input.get_joy_axis(0, JOY_AXIS_RIGHT_Y) > 0.2:
+		$CameraPivot.rotate_x(deg_to_rad( Input.get_joy_axis(0, 3) * -4.3 ))
+	$CameraPivot.rotation.x = clamp($CameraPivot.rotation.x,deg_to_rad(-80),deg_to_rad(80))
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -26,13 +32,20 @@ func _physics_process(delta):
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var input_dir = Input.get_vector("left", "right", "fwd", "bwd")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
+
+	var speed
+	if Input.is_action_pressed("sprint"):
+		speed = SPEED + 3
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
+		speed = SPEED
+
+	if direction:
+		velocity.x = direction.x * speed
+		velocity.z = direction.z * speed
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
+		velocity.z = move_toward(velocity.z, 0, speed)
 
 	move_and_slide()

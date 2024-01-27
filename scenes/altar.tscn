@@ -1,0 +1,139 @@
+[gd_scene load_steps=21 format=3 uid="uid://t1f65ww0hlll"]
+
+[ext_resource type="Texture2D" uid="uid://d0sc3dpxsuk5k" path="res://Textures/kenney_particle-pack/light_01.png" id="1_6mer7"]
+[ext_resource type="Script" path="res://scripts/altar.gd" id="1_wvvkd"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qp6os"]
+radius = 5.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bvchg"]
+transparency = 1
+blend_mode = 1
+shading_mode = 0
+specular_mode = 1
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0.517647, 0.67451, 1)
+albedo_texture = ExtResource("1_6mer7")
+billboard_mode = 1
+grow_amount = 1.967
+proximity_fade_distance = 45.77
+
+[sub_resource type="Curve" id="Curve_lpbc0"]
+min_value = -360.0
+max_value = 360.0
+_data = [Vector2(0, -206.551), 0.0, 0.0, 0, 0, Vector2(1, 307.63), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_sqvim"]
+texture_mode = 1
+curve = SubResource("Curve_lpbc0")
+
+[sub_resource type="Curve" id="Curve_8l7ft"]
+min_value = -360.0
+max_value = 360.0
+_data = [Vector2(0.0125392, -228.643), 0.0, 0.0, 0, 0, Vector2(0.376176, 220.125), 0.0, 0.0, 0, 0, Vector2(0.714734, -193.674), 0.0, 0.0, 0, 0, Vector2(0.978056, 301.719), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_nlsop"]
+curve = SubResource("Curve_8l7ft")
+
+[sub_resource type="Curve" id="Curve_xupns"]
+_data = [Vector2(0.200627, 0.506227), 0.0, 0.0, 0, 0, Vector2(0.413793, 0.716687), 0.0, 0.0, 0, 0, Vector2(0.69279, 0.255293), 0.0, 0.0, 0, 0, Vector2(0.905956, 0.919054), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_r0l32"]
+curve = SubResource("Curve_xupns")
+
+[sub_resource type="Curve" id="Curve_7irlu"]
+max_value = 200.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.219436, 135.243), 0.0, 0.0, 0, 0, Vector2(0.626959, 60.7721), 0.0, 0.0, 0, 0, Vector2(0.996865, 180.573), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_b7bdo"]
+curve = SubResource("Curve_7irlu")
+
+[sub_resource type="Gradient" id="Gradient_7skoa"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qlvpr"]
+gradient = SubResource("Gradient_7skoa")
+
+[sub_resource type="Curve" id="Curve_w37kq"]
+min_value = -2.0
+max_value = 2.0
+_data = [Vector2(0, -1.1731), 0.0, 0.0, 0, 0, Vector2(0.131661, 1.67621), 0.0, 0.0, 0, 0, Vector2(0.285266, -1.56164), 0.0, 0.0, 0, 0, Vector2(0.426332, 1.67621), 0.0, 0.0, 0, 0, Vector2(0.598746, -1.46451), 0.0, 0.0, 0, 0, Vector2(0.742947, 1.77335), 0.0, 0.0, 0, 0, Vector2(0.890282, -1.43213), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 8
+
+[sub_resource type="CurveTexture" id="CurveTexture_vxy2k"]
+curve = SubResource("Curve_w37kq")
+
+[sub_resource type="Curve" id="Curve_ff7uy"]
+_data = [Vector2(0.0125392, 0.0448319), 0.0, 0.0, 0, 0, Vector2(0.507837, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_baxw2"]
+curve = SubResource("Curve_ff7uy")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jyrel"]
+lifetime_randomness = 0.08
+emission_shape = 1
+emission_sphere_radius = 0.3
+angle_min = -150.0
+angle_max = 150.0
+angle_curve = SubResource("CurveTexture_sqvim")
+angular_velocity_min = -150.0
+angular_velocity_max = 150.0
+angular_velocity_curve = SubResource("CurveTexture_nlsop")
+orbit_velocity_min = -0.1
+orbit_velocity_max = 0.1
+orbit_velocity_curve = SubResource("CurveTexture_vxy2k")
+gravity = Vector3(0, 0, 0)
+scale_min = 0.0
+scale_max = 10.0
+scale_curve = SubResource("CurveTexture_baxw2")
+color_ramp = SubResource("GradientTexture1D_qlvpr")
+anim_speed_max = 2.0
+anim_speed_curve = SubResource("CurveTexture_b7bdo")
+anim_offset_min = 0.0231
+anim_offset_max = 0.2544
+anim_offset_curve = SubResource("CurveTexture_r0l32")
+turbulence_noise_strength = 20.0
+turbulence_noise_scale = 2.335
+turbulence_noise_speed_random = 1.23
+turbulence_influence_min = 0.58
+turbulence_influence_max = 0.831
+sub_emitter_keep_velocity = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_c8vq5"]
+
+[node name="Altar" type="Area3D"]
+script = ExtResource("1_wvvkd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00566, 0)
+shape = SubResource("SphereShape3D_qp6os")
+
+[node name="altarParticles" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000400782, -0.171269, 0.0391849)
+visible = false
+material_override = SubResource("StandardMaterial3D_bvchg")
+amount = 32
+lifetime = 1.5
+randomness = 0.49
+fixed_fps = 60
+trail_lifetime = 0.39
+process_material = SubResource("ParticleProcessMaterial_jyrel")
+draw_passes = 3
+draw_pass_1 = SubResource("QuadMesh_c8vq5")
+draw_pass_2 = null
+draw_pass_3 = null
+
+[node name="altarLight" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15058, 0)
+visible = false
+light_color = Color(0, 0.803922, 0.67451, 1)
+light_indirect_energy = 2.185
+light_size = 0.2
+
+[connection signal="body_entered" from="." to="." method="_on_body_enterd_area"]
+[connection signal="body_exited" from="." to="." method="_on_body_left_area"]

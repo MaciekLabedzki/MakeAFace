@@ -1,0 +1,180 @@
+[gd_scene load_steps=19 format=3 uid="uid://b3xmgww7h1p3o"]
+
+[ext_resource type="Texture2D" uid="uid://bl5wld8ve6i0g" path="res://Textures/kenney_particle-pack/fire_01.png" id="1_p2hnx"]
+[ext_resource type="Texture2D" uid="uid://be38qajirbu8p" path="res://Textures/UI/menu.png" id="2_hjx2a"]
+[ext_resource type="Script" path="res://scripts/Start.gd" id="3_2mbb4"]
+[ext_resource type="Script" path="res://exit.gd" id="4_wrt7d"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ay6w1"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0.5, 0.5, 0.5, 1)
+sky_energy_multiplier = 0.0
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0.5, 0.5, 0.5, 1)
+
+[sub_resource type="Sky" id="Sky_pjrx6"]
+sky_material = SubResource("ProceduralSkyMaterial_ay6w1")
+
+[sub_resource type="Environment" id="Environment_cue7u"]
+background_mode = 1
+background_color = Color(0.431373, 0, 0, 1)
+background_energy_multiplier = 0.2
+sky = SubResource("Sky_pjrx6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bivf"]
+transparency = 3
+alpha_hash_scale = 1.0
+alpha_antialiasing_mode = 0
+blend_mode = 3
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_p2hnx")
+billboard_mode = 1
+grow_amount = 1.967
+proximity_fade_distance = 45.77
+
+[sub_resource type="Curve" id="Curve_irb1u"]
+min_value = -360.0
+max_value = 360.0
+_data = [Vector2(0, -206.551), 0.0, 0.0, 0, 0, Vector2(1, 307.63), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_6dw1m"]
+texture_mode = 1
+curve = SubResource("Curve_irb1u")
+
+[sub_resource type="Curve" id="Curve_i5nrd"]
+min_value = -360.0
+max_value = 360.0
+_data = [Vector2(0.0125392, -228.643), 0.0, 0.0, 0, 0, Vector2(0.376176, 220.125), 0.0, 0.0, 0, 0, Vector2(0.714734, -193.674), 0.0, 0.0, 0, 0, Vector2(0.978056, 301.719), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_lgvhe"]
+curve = SubResource("Curve_i5nrd")
+
+[sub_resource type="Gradient" id="Gradient_veup6"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_feuqv"]
+gradient = SubResource("Gradient_veup6")
+
+[sub_resource type="Curve" id="Curve_77a16"]
+min_value = -2.0
+max_value = 2.0
+_data = [Vector2(0, -1.1731), 0.0, 0.0, 0, 0, Vector2(0.131661, 1.67621), 0.0, 0.0, 0, 0, Vector2(0.285266, -1.56164), 0.0, 0.0, 0, 0, Vector2(0.426332, 1.67621), 0.0, 0.0, 0, 0, Vector2(0.598746, -1.46451), 0.0, 0.0, 0, 0, Vector2(0.742947, 1.77335), 0.0, 0.0, 0, 0, Vector2(0.890282, -1.43213), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 8
+
+[sub_resource type="CurveTexture" id="CurveTexture_w0lnj"]
+curve = SubResource("Curve_77a16")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cslyd"]
+lifetime_randomness = 0.08
+emission_shape = 1
+emission_sphere_radius = 0.8
+angle_min = -208.1
+angle_max = 316.3
+angle_curve = SubResource("CurveTexture_6dw1m")
+angular_velocity_min = -274.68
+angular_velocity_max = 283.01
+angular_velocity_curve = SubResource("CurveTexture_lgvhe")
+orbit_velocity_min = -0.1
+orbit_velocity_max = 0.1
+orbit_velocity_curve = SubResource("CurveTexture_w0lnj")
+gravity = Vector3(0, -0.1, 0)
+scale_min = 0.0
+scale_max = 3.0
+color_ramp = SubResource("GradientTexture1D_feuqv")
+turbulence_enabled = true
+turbulence_noise_strength = 20.0
+turbulence_noise_scale = 2.335
+turbulence_noise_speed_random = 1.23
+turbulence_influence_min = 0.58
+turbulence_influence_max = 0.831
+sub_emitter_mode = 1
+sub_emitter_frequency = 15.0
+sub_emitter_keep_velocity = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_p4qjl"]
+
+[node name="Menu" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_cue7u")
+
+[node name="Scream" type="Node3D" parent="."]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="Scream"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000400782, 1.6978, 0.0391849)
+material_override = SubResource("StandardMaterial3D_1bivf")
+amount = 64
+lifetime = 1.5
+randomness = 0.49
+fixed_fps = 60
+trail_lifetime = 0.39
+process_material = SubResource("ParticleProcessMaterial_cslyd")
+draw_passes = 3
+draw_pass_1 = SubResource("QuadMesh_p4qjl")
+draw_pass_2 = null
+draw_pass_3 = null
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.175745, 0, -0.984436, 0, 1, 0, 0.984436, 0, -0.175745, -3.02347, 1.9519, -2.15614)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="menu" type="MarginContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.388889
+anchor_top = -0.432099
+anchor_right = 1.38889
+anchor_bottom = 1.4321
+offset_left = 448.0
+offset_top = 280.0
+offset_right = -448.0
+offset_bottom = -280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 128
+theme_override_constants/margin_top = 128
+theme_override_constants/margin_right = 128
+theme_override_constants/margin_bottom = 128
+metadata/_edit_use_anchors_ = true
+
+[node name="menu" type="TextureRect" parent="CanvasLayer/Control/menu"]
+layout_mode = 2
+texture = ExtResource("2_hjx2a")
+expand_mode = 1
+
+[node name="Start" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 2
+offset_left = 1314.0
+offset_top = 412.0
+offset_right = 1764.0
+offset_bottom = 583.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+flat = true
+script = ExtResource("3_2mbb4")
+
+[node name="exit" type="Button" parent="CanvasLayer/Control"]
+layout_direction = 1
+layout_mode = 2
+offset_left = 1319.0
+offset_top = 649.0
+offset_right = 1764.0
+offset_bottom = 816.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+flat = true
+script = ExtResource("4_wrt7d")

@@ -1,0 +1,128 @@
+[gd_scene load_steps=13 format=3 uid="uid://dogxrrvcshe4i"]
+
+[ext_resource type="Texture2D" uid="uid://b3nj0er24b8x6" path="res://Textures/UI/03.png" id="1_e3rq5"]
+[ext_resource type="Texture2D" uid="uid://bljigcc5lsy3l" path="res://Textures/UI/13.png" id="2_rkfsm"]
+[ext_resource type="Texture2D" uid="uid://b1mt7b4j1g4kk" path="res://Textures/UI/23.png" id="3_dxlea"]
+[ext_resource type="Texture2D" uid="uid://cm5b5bbwc5c76" path="res://Textures/UI/33.png" id="4_goum5"]
+[ext_resource type="Texture2D" uid="uid://b7t25jqtyc48o" path="res://Textures/UI/e.png" id="5_7kxy8"]
+[ext_resource type="Texture2D" uid="uid://bywwbkfjd0i62" path="res://Textures/UI/3.png" id="6_2fojx"]
+[ext_resource type="Texture2D" uid="uid://dp51ues0iplwe" path="res://Textures/UI/2.png" id="7_1wxrs"]
+[ext_resource type="Texture2D" uid="uid://dafj2kc5dvusr" path="res://Textures/UI/1.png" id="8_27yna"]
+[ext_resource type="Texture2D" uid="uid://dhdj4es6xgcu3" path="res://Textures/UI/face.png" id="9_2qqhi"]
+[ext_resource type="Texture2D" uid="uid://uof2ebgw0os6" path="res://Textures/UI/laugh.png" id="10_4knys"]
+[ext_resource type="Texture2D" uid="uid://ci8er5mmv0b5y" path="res://Textures/UI/scare.png" id="11_pmce6"]
+[ext_resource type="Texture2D" uid="uid://du0ux4u5pfbb3" path="res://icon.svg" id="12_dlewv"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="altar" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 0.98863)
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+metadata/_edit_use_anchors_ = true
+
+[node name="03" type="TextureRect" parent="Control/altar"]
+layout_mode = 2
+texture = ExtResource("1_e3rq5")
+expand_mode = 2
+
+[node name="13" type="TextureRect" parent="Control/altar"]
+visible = false
+layout_mode = 2
+texture = ExtResource("2_rkfsm")
+expand_mode = 1
+
+[node name="23" type="TextureRect" parent="Control/altar"]
+visible = false
+layout_mode = 2
+texture = ExtResource("3_dxlea")
+expand_mode = 1
+
+[node name="33" type="TextureRect" parent="Control/altar"]
+visible = false
+layout_mode = 2
+texture = ExtResource("4_goum5")
+expand_mode = 1
+
+[node name="press e" type="TextureRect" parent="Control/altar"]
+visible = false
+layout_mode = 2
+texture = ExtResource("5_7kxy8")
+expand_mode = 1
+
+[node name="scream" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="3" type="TextureRect" parent="Control/scream"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_2fojx")
+expand_mode = 1
+
+[node name="2" type="TextureRect" parent="Control/scream"]
+visible = false
+layout_mode = 2
+texture = ExtResource("7_1wxrs")
+expand_mode = 1
+
+[node name="1" type="TextureRect" parent="Control/scream"]
+visible = false
+layout_mode = 2
+texture = ExtResource("8_27yna")
+expand_mode = 1
+
+[node name="makeface" type="TextureRect" parent="Control/scream"]
+visible = false
+layout_mode = 2
+texture = ExtResource("9_2qqhi")
+expand_mode = 1
+
+[node name="laughme" type="TextureRect" parent="Control/scream"]
+visible = false
+layout_mode = 2
+texture = ExtResource("10_4knys")
+expand_mode = 1
+
+[node name="scareme" type="TextureRect" parent="Control/scream"]
+visible = false
+layout_mode = 2
+texture = ExtResource("11_pmce6")
+expand_mode = 1
+
+[node name="spared" type="TextureRect" parent="Control/scream"]
+visible = false
+layout_mode = 2
+texture = ExtResource("12_dlewv")
+expand_mode = 1
+
+[node name="died" type="TextureRect" parent="Control/scream"]
+visible = false
+layout_mode = 2
+texture = ExtResource("12_dlewv")
+expand_mode = 1
