@@ -20,11 +20,14 @@ rotation_order = 4
 [node name="SpotLight3D" type="SpotLight3D" parent="CameraPivot/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.06638, 0.132823)
 light_color = Color(0.384314, 0.203922, 0.192157, 1)
-light_energy = 2.0
+light_energy = 3.0
 light_indirect_energy = 2.0
 light_volumetric_fog_energy = 2.0
 light_specular = 2.0
-spot_range = 15.0
+spot_range = 25.0
 
 [node name="Marker3D" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.89547, -2.99199)
+
+[node name="p" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75856, 0)

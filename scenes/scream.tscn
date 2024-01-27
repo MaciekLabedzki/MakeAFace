@@ -105,5 +105,8 @@ draw_pass_1 = SubResource("QuadMesh_p4qjl")
 draw_pass_2 = null
 draw_pass_3 = null
 
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_desired_distance = 0.2
+
 [connection signal="body_entered" from="CollisionShape3D" to="." method="_on_body_enterd_area"]
 [connection signal="body_exited" from="CollisionShape3D" to="." method="_on_body_exited_area"]

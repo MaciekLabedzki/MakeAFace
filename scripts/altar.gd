@@ -6,12 +6,14 @@ var UI
 func _ready():
 	UI = get_tree().root.get_node("World/UI")
 
-func _input(event):
+func _input(_event):
 	if Input.is_action_just_pressed("interact") and isPlayerNear and not is_in_group("active"):
 		add_to_group("active")
 		$altarLight.show()
 		$altarParticles.show()
 		get_tree().root.get_node("World").numberOfAltars += 1
+		get_tree().root.get_node("World/NavigationRegion3D/GridMap/Scream").huntPlayer()
+		print("clicked")
 
 		if get_tree().root.get_node("World").numberOfAltars == 1:
 			UI.get_child(0).get_child(0).get_child(0).hide()

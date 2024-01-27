@@ -1,10 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cotki0idtxwcf"]
+[gd_scene load_steps=8 format=3 uid="uid://cotki0idtxwcf"]
 
 [ext_resource type="Script" path="res://scripts/World.gd" id="1_7npv5"]
 [ext_resource type="PackedScene" uid="uid://dahcolul45byn" path="res://scenes/Labirynth.tscn" id="1_wcqd8"]
 [ext_resource type="PackedScene" uid="uid://dogxrrvcshe4i" path="res://scenes/ui.tscn" id="3_enlxl"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f6edh"]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xgpvt"]
 sky_top_color = Color(0, 0, 0, 1)
 sky_horizon_color = Color(0.5, 0.5, 0.5, 1)
 sky_energy_multiplier = 0.0
@@ -12,22 +12,40 @@ ground_bottom_color = Color(0, 0, 0, 1)
 ground_horizon_color = Color(0.5, 0.5, 0.5, 1)
 
 [sub_resource type="Sky" id="Sky_k3qv4"]
-sky_material = SubResource("ProceduralSkyMaterial_f6edh")
+sky_material = SubResource("ProceduralSkyMaterial_xgpvt")
 
-[sub_resource type="Environment" id="Environment_x4xfq"]
+[sub_resource type="Environment" id="Environment_ps1g3"]
 background_mode = 2
 sky = SubResource("Sky_k3qv4")
-ambient_light_energy = 0.0
+ambient_light_source = 2
+ambient_light_color = Color(0.843137, 0.843137, 0.843137, 1)
+ambient_light_energy = 2.01
 tonemap_mode = 2
 sdfgi_enabled = true
 glow_enabled = true
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_lde67"]
+vertices = PackedVector3Array(2.25, 1.5, 5.5, 8, 1.5, 2.75, 7.5, 1.5, 2.5, -5.25, 1.5, 2.25, -6, 1.5, 2.75, -0.5, 1.5, 6, -0.25, 1.5, 5.5, -5.25, 1.5, 2.25, -0.25, 1.5, 5.5, 2.25, 1.5, 5.5, 7.5, 1.5, 2.5, 7.25, 1.5, -1.25, -5.25, 1.5, -1.25, -25.25, 1.5, 7, -24.5, 1.5, 7, -24.5, 1.5, 5.75, -25.25, 1.5, 2.75, -24.5, 1.5, 5.75, -23.25, 1.5, 5.5, -23, 1.5, 2.75, -25.25, 1.5, 2.75, -24.25, 1.5, 8.5, -24.5, 1.5, 7, -25.25, 1.5, 7, -25.25, 1.5, 11.5, -11, 1.5, 11.5, -11, 1.5, 8.5, -12.5, 1.5, 8.25, -21.5, 1.5, 8.25, -24.25, 1.5, 8.5, -25.25, 1.5, 11.5, -21.5, 1.5, 5.75, -12.5, 1.5, 5.75, -11, 1.5, 5.5, -11, 1.5, 2.75, -23, 1.5, 2.75, -23.25, 1.5, 5.5, -12.5, 1.5, 8.25, -12.5, 1.5, 5.75, -21.5, 1.5, 5.75, -21.5, 1.5, 8.25, -11, 1.5, 2.75, -11, 1.5, 5.5, -9.5, 1.5, 5.75, -6, 1.5, 2.75, -9.5, 1.5, 8.25, -11, 1.5, 8.5, -11, 1.5, 11.5, -6, 1.5, 2.75, -9.5, 1.5, 5.75, -9.5, 1.5, 8.25, -3.75, 1.5, 11.5, -0.5, 1.5, 8, -0.5, 1.5, 6, -6, 1.5, 2.75, -9.5, 1.5, 8.25, -11, 1.5, 11.5, 9.75, 1.5, 5.5, 13.5, 1.5, 5.25, 13.25, 1.5, 2.75, 8, 1.5, 2.75, 9.75, 1.5, 5.5, 8, 1.5, 2.75, 2.25, 1.5, 5.5, 2.5, 1.5, 8, 6, 1.5, 11.5, 9.5, 1.5, 11.25, -23.5, 6.5, 6.5, -23.5, 6.5, 7.5, -22.5, 6.5, 7.5, -22.5, 6.5, 6.5, -11.5, 6.5, 6.5, -11.5, 6.5, 7.5, -10.5, 6.5, 7.5, -10.5, 6.5, 6.5, 0.5, 6.5, 6.5, 0.5, 6.5, 7.5, 1.5, 6.5, 7.5, 1.5, 6.5, 6.5, -0.25, 1.5, 8.5, -0.5, 1.5, 8, -3.75, 1.5, 11.5, -3.25, 1.5, 11.75, 2.25, 1.5, 8.5, -0.25, 1.5, 8.5, -3.25, 1.5, 11.75, -3.25, 1.5, 15.25, 5.5, 1.5, 15.25, 5.5, 1.5, 11.75, 5.5, 1.5, 11.75, 6, 1.5, 11.5, 2.5, 1.5, 8, 2.25, 1.5, 8.5)
+polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(6, 5, 3), PackedInt32Array(3, 5, 4), PackedInt32Array(8, 7, 9), PackedInt32Array(9, 7, 12), PackedInt32Array(9, 12, 10), PackedInt32Array(10, 12, 11), PackedInt32Array(14, 13, 15), PackedInt32Array(15, 13, 16), PackedInt32Array(18, 17, 19), PackedInt32Array(19, 17, 20), PackedInt32Array(22, 21, 23), PackedInt32Array(23, 21, 24), PackedInt32Array(26, 25, 27), PackedInt32Array(27, 25, 28), PackedInt32Array(28, 25, 29), PackedInt32Array(29, 25, 30), PackedInt32Array(33, 32, 34), PackedInt32Array(34, 32, 31), PackedInt32Array(34, 31, 36), PackedInt32Array(34, 36, 35), PackedInt32Array(40, 39, 37), PackedInt32Array(37, 39, 38), PackedInt32Array(42, 41, 43), PackedInt32Array(43, 41, 44), PackedInt32Array(47, 46, 45), PackedInt32Array(50, 49, 48), PackedInt32Array(52, 51, 53), PackedInt32Array(53, 51, 54), PackedInt32Array(54, 51, 55), PackedInt32Array(55, 51, 56), PackedInt32Array(58, 57, 59), PackedInt32Array(59, 57, 60), PackedInt32Array(64, 63, 65), PackedInt32Array(65, 63, 66), PackedInt32Array(66, 63, 61), PackedInt32Array(61, 63, 62), PackedInt32Array(70, 69, 67), PackedInt32Array(67, 69, 68), PackedInt32Array(74, 73, 71), PackedInt32Array(71, 73, 72), PackedInt32Array(78, 77, 75), PackedInt32Array(75, 77, 76), PackedInt32Array(82, 81, 79), PackedInt32Array(79, 81, 80), PackedInt32Array(84, 83, 85), PackedInt32Array(85, 83, 86), PackedInt32Array(86, 83, 88), PackedInt32Array(86, 88, 87), PackedInt32Array(92, 91, 89), PackedInt32Array(89, 91, 90)]
 
 [node name="World" type="Node3D"]
 script = ExtResource("1_7npv5")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_x4xfq")
-
-[node name="GridMap" parent="." instance=ExtResource("1_wcqd8")]
+environment = SubResource("Environment_ps1g3")
 
 [node name="UI" parent="." instance=ExtResource("3_enlxl")]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_lde67")
+
+[node name="GridMap" parent="NavigationRegion3D" instance=ExtResource("1_wcqd8")]
+
+[node name="Marker3D" type="Marker3D" parent="NavigationRegion3D/GridMap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3582, 2.20108, 10.0309)
+
+[node name="Marker3D2" type="Marker3D" parent="NavigationRegion3D/GridMap"]
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 1.63067, 2.37218, 1.33286)
+
+[node name="Marker3D3" type="Marker3D" parent="NavigationRegion3D/GridMap"]
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 2.37181, 2.37218, 11.9734)

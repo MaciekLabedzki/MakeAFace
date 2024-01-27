@@ -19,5 +19,5 @@ ret, image = vid.read()
 vid.release()
 result = mse(zero,image)
 print(result)
-with open('error.txt', 'w') as fh:
+with open('../error.txt', 'w') as fh:
     fh.write(str(result))

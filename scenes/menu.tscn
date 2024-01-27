@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_tyrkr"]
 [ext_resource type="Texture2D" uid="uid://be38qajirbu8p" path="res://Textures/UI/menu.png" id="2_hjx2a"]
 [ext_resource type="Script" path="res://scripts/Start.gd" id="3_2mbb4"]
-[ext_resource type="Script" path="res://exit.gd" id="4_wrt7d"]
+[ext_resource type="Script" path="res://scripts/exit.gd" id="4_wrt7d"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ay6w1"]
 sky_top_color = Color(0, 0, 0, 1)
