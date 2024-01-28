@@ -6,6 +6,8 @@ const mouseSensitivity = -0.2
 var scream
 var isColliding = false
 
+var soundTimer
+
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
@@ -36,7 +38,6 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor() and not isColliding:
 		velocity.y = JUMP_VELOCITY
 
-
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir = Input.get_vector("left", "right", "fwd", "bwd")
@@ -62,3 +63,21 @@ func _physics_process(delta):
 
 	if not isColliding:
 		move_and_slide()
+	
+	if velocity.length() != 0:
+		var x = 0
+		if SPEED >11:
+			x=0.2
+		if soundTimer:
+			if soundTimer.time_left <= x:
+				$AudioStreamPlayer3D.pitch_scale = randf_range(0.8,1.2)
+				$AudioStreamPlayer3D.play()
+				if SPEED >11:
+					soundTimer = get_tree().create_timer(0.25)
+				else:
+					soundTimer = get_tree().create_timer(0.42)
+		else:
+			if SPEED >11:
+				soundTimer = get_tree().create_timer(0.25)
+			else:
+				soundTimer = get_tree().create_timer(0.42)

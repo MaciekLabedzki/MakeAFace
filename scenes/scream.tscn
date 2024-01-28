@@ -1,7 +1,12 @@
-[gd_scene load_steps=15 format=3 uid="uid://kkrs3wqgc73c"]
+[gd_scene load_steps=20 format=3 uid="uid://kkrs3wqgc73c"]
 
 [ext_resource type="Script" path="res://scripts/scream.gd" id="1_ow7q0"]
 [ext_resource type="Texture2D" uid="uid://bl5wld8ve6i0g" path="res://Textures/kenney_particle-pack/fire_01.png" id="1_uhgs7"]
+[ext_resource type="PackedScene" uid="uid://cbq6c6o3rp3d5" path="res://Models/Scream.glb" id="3_cwdpd"]
+[ext_resource type="AudioStream" uid="uid://lv4vywe63jgw" path="res://sounds/sc1.mp3" id="4_yr8vh"]
+[ext_resource type="AudioStream" uid="uid://bmsp5m1hq3xpb" path="res://sounds/sc2.wav" id="5_5dqy2"]
+[ext_resource type="AudioStream" uid="uid://6ki0bokvvgxo" path="res://sounds/sc3.mp3" id="6_wufld"]
+[ext_resource type="AudioStream" uid="uid://g6rlgee3tx0a" path="res://sounds/sc4.wav" id="7_mbpif"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_5xpwo"]
 radius = 1.65247
@@ -92,7 +97,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.458717, 0)
 shape = SubResource("SphereShape3D_5xpwo")
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000400782, 1.6978, 0.0391849)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.568, 0.4)
 material_override = SubResource("StandardMaterial3D_1bivf")
 amount = 64
 lifetime = 1.5
@@ -107,6 +112,27 @@ draw_pass_3 = null
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_desired_distance = 0.2
+
+[node name="Scream" parent="." instance=ExtResource("3_cwdpd")]
+transform = Transform3D(-2.8556e-08, 0, 0.653285, 0, 0.653285, 0, -0.653285, 0, -2.8556e-08, 0, 1.423, 0)
+
+[node name="1" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_yr8vh")
+max_distance = 100.0
+
+[node name="2" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_5dqy2")
+max_distance = 100.0
+
+[node name="3" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("6_wufld")
+max_distance = 100.0
+
+[node name="4" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("7_mbpif")
+volume_db = -20.0
+autoplay = true
+max_distance = 100.0
 
 [connection signal="body_entered" from="CollisionShape3D" to="." method="_on_body_enterd_area"]
 [connection signal="body_exited" from="CollisionShape3D" to="." method="_on_body_exited_area"]

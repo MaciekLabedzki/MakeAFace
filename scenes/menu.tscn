@@ -1,10 +1,13 @@
-[gd_scene load_steps=20 format=3 uid="uid://b3xmgww7h1p3o"]
+[gd_scene load_steps=23 format=3 uid="uid://b3xmgww7h1p3o"]
 
 [ext_resource type="Texture2D" uid="uid://bl5wld8ve6i0g" path="res://Textures/kenney_particle-pack/fire_01.png" id="1_p2hnx"]
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_tyrkr"]
 [ext_resource type="Texture2D" uid="uid://be38qajirbu8p" path="res://Textures/UI/menu.png" id="2_hjx2a"]
 [ext_resource type="Script" path="res://scripts/Start.gd" id="3_2mbb4"]
+[ext_resource type="PackedScene" uid="uid://cbq6c6o3rp3d5" path="res://Models/Scream.glb" id="3_ibbqv"]
 [ext_resource type="Script" path="res://scripts/exit.gd" id="4_wrt7d"]
+[ext_resource type="AudioStream" uid="uid://c2jycs7toodgx" path="res://sounds/scbg.mp3" id="7_5r2x4"]
+[ext_resource type="AudioStream" uid="uid://co1h4hd0ekggw" path="res://sounds/223470__robinhood76__04938-spooky-metallic-ambient-noise-looping.wav" id="8_kuhbl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ay6w1"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -119,6 +122,9 @@ draw_pass_1 = SubResource("QuadMesh_p4qjl")
 draw_pass_2 = null
 draw_pass_3 = null
 
+[node name="Scream2" parent="Scream" instance=ExtResource("3_ibbqv")]
+transform = Transform3D(-0.881814, 0, 0.471597, 0, 1, 0, -0.471597, 0, -0.881814, 0, 0.877564, 0)
+
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-0.175745, 0, -0.984436, 0, 1, 0, 0.984436, 0, -0.175745, -3.02347, 1.9519, -2.15614)
 
@@ -180,3 +186,15 @@ grow_vertical = 2
 action_mode = 0
 flat = true
 script = ExtResource("4_wrt7d")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("7_5r2x4")
+volume_db = -35.0
+autoplay = true
+max_distance = 50.0
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("8_kuhbl")
+volume_db = -20.0
+autoplay = true
+max_distance = 50.0

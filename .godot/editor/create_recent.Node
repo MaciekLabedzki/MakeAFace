@@ -1,3 +1,4 @@
+AudioStreamPlayer3D
 Node3D
 NavigationAgent3D
 Marker3D
@@ -11,4 +12,3 @@ TextureRect
 MarginContainer
 Control
 MeshInstance3D
-StaticBody3D

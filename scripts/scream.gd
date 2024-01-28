@@ -16,12 +16,12 @@ var rng
 var timerDeactivate
 var timerDeWasTimedOut = true
 var p
+var soundTimer
+var soundTimer2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	navAgent = $NavigationAgent3D
-	get_tree().root.get_node("World/NavigationRegion3D/GridMap/Marker3D2")
-	#navAgent.target_position = get_tree().root.get_node("World/NavigationRegion3D/GridMap/Marker3D2").global_position
 	listOfPoints = gatherNavPoints()
 	p = get_tree().root.get_node("World/NavigationRegion3D/GridMap/player/p")
 	rng = RandomNumberGenerator.new()
@@ -66,6 +66,23 @@ func _process(_delta):
 			timerDeWasTimedOut = true
 			SPEED = 5.0
 			target = null
+			get_node("CollisionShape3D/CollisionShape3D").disabled = false
+	look_at(navAgent.get_next_path_position())
+	
+	#sound
+	if soundTimer:
+		if soundTimer.time_left <= 0:
+			get_node("1").pitch_scale = randf_range(0.8,1.2)
+			get_node("1").play()
+			soundTimer = get_tree().create_timer(2)
+		if soundTimer.time_left <= 1 and soundTimer.time_left >0:
+			get_node("2").pitch_scale = randf_range(0.8,1.2)
+			get_node("2").play()
+		if soundTimer.time_left <= 1.5 and soundTimer.time_left >0.5:
+			get_node("3").pitch_scale = randf_range(0.8,1.2)
+			get_node("3").play()
+	else:
+		soundTimer = get_tree().create_timer(2)
 
 func _physics_process(delta):
 	if not target:
@@ -84,11 +101,10 @@ func _physics_process(delta):
 
 func _on_body_enterd_area(body):
 	if body.is_in_group("player") and not playerInArea:
+		get_node("CollisionShape3D/CollisionShape3D").disabled = true
 		playerInArea = true
 		SPEED = 0.0
-		var X = Vector2(player.position.x,player.position.z)
-		var Y = -X.direction_to(Vector2(position.x,position.z))
-		player.rotate_y(deg_to_rad(Y.dot(X)))
+		player.look_at(position)
 		if get_tree().root.get_node("World").numberOfAltars >= 3:
 			#scare me
 			playerInArea = true

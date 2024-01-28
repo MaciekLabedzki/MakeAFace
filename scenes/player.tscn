@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://csete6xehlyas"]
+[gd_scene load_steps=4 format=3 uid="uid://csete6xehlyas"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_8hnfd"]
+[ext_resource type="AudioStream" uid="uid://c520hu4oyqd4y" path="res://sounds/ftstp2.wav" id="2_kqp2b"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tfvh7"]
 
@@ -31,3 +32,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.89547, -2.99199)
 
 [node name="p" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75856, 0)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_kqp2b")
+volume_db = -25.0
+max_distance = 5.0

@@ -1,37 +1,54 @@
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1706280658
-0.png::CompressedTexture2D::9214691871758002004::1706391672::1706391704::1::::<><>::
-icon.svg::CompressedTexture2D::8615905336263135130::1706280472::1706280482::1::::<><>::
-won.gd::GDScript::-1::1706377172::0::1::::<>Control<>::
+0.png::CompressedTexture2D::2053871715699886727::1706441978::1706441998::1::::<><>::
 ::res://CameraProcessing/::1706340768
 ::res://Models/::1706291966
+Scream.glb::PackedScene::4877947704599409020::1706394960::1706394992::0::::<><>::
+Scream_NormalMap.png::CompressedTexture2D::2719809364150751931::1706394992::1706394994::1::::<><>::
+Scream_scream.png::CompressedTexture2D::6628444743140171248::1706394992::1706394994::1::::<><>::
+Scream_SpecularMap.png::CompressedTexture2D::4038722604705072293::1706394992::1706394992::1::::<><>::
 tiles.glb::PackedScene::3856729360277091066::1706301186::1706301188::1::::<><>::uid://dykueqd5emimf::::res://Models/tiles_Cobble.jpg<>uid://d1iy7a3ba7po3::::res://Models/tiles_Cobble_NM (1).png
-tileset.tres::MeshLibrary::3051411807535359254::1706385670::0::1::::<><>::uid://dykueqd5emimf::::res://Models/tiles_Cobble.jpg<>uid://d1iy7a3ba7po3::::res://Models/tiles_Cobble_NM (1).png
+tileset.tres::MeshLibrary::3051411807535359254::1706433874::0::1::::<><>::uid://dykueqd5emimf::::res://Models/tiles_Cobble.jpg<>uid://d1iy7a3ba7po3::::res://Models/tiles_Cobble_NM (1).png
 tiles_Cobble.jpg::CompressedTexture2D::8865660405340531933::1706300596::1706300598::1::::<><>::
 tiles_Cobble_NM (1).png::CompressedTexture2D::9002201404233209812::1706300596::1706300598::1::::<><>::
 ::res://scenes/::1706300720
-altar.tscn::PackedScene::1387622406022530997::1706381464::0::1::::<><>::uid://d0sc3dpxsuk5k::::res://Textures/kenney_particle-pack/light_01.png<>res://scripts/altar.gd
-Labirynth.tscn::PackedScene::7173859739650587489::1706391666::0::1::::<><>::uid://bjqekoqx2axms::::res://Models/tileset.tres<>uid://csete6xehlyas::::res://scenes/player.tscn<>uid://kkrs3wqgc73c::::res://scenes/scream.tscn<>uid://t1f65ww0hlll::::res://scenes/altar.tscn
-menu.tscn::PackedScene::4399929503541738050::1706391666::0::1::::<><>::uid://bl5wld8ve6i0g::::res://Textures/kenney_particle-pack/fire_01.png<>res://scripts/menu.gd<>uid://be38qajirbu8p::::res://Textures/UI/menu.png<>res://scripts/Start.gd<>res://scripts/exit.gd
-player.tscn::PackedScene::6045660493871118714::1706392154::0::1::::<><>::res://scripts/player.gd
-scream.tscn::PackedScene::723598052462842154::1706391666::0::1::::<><>::res://scripts/scream.gd<>uid://bl5wld8ve6i0g::::res://Textures/kenney_particle-pack/fire_01.png
+altar.tscn::PackedScene::1387622406022530997::1706436042::0::1::::<><>::uid://d0sc3dpxsuk5k::::res://Textures/kenney_particle-pack/light_01.png<>res://scripts/altar.gd
+Labirynth.tscn::PackedScene::7173859739650587489::1706441972::0::1::::<><>::uid://bjqekoqx2axms::::res://Models/tileset.tres<>uid://csete6xehlyas::::res://scenes/player.tscn<>uid://kkrs3wqgc73c::::res://scenes/scream.tscn<>uid://t1f65ww0hlll::::res://scenes/altar.tscn
+menu.tscn::PackedScene::4399929503541738050::1706441972::0::1::::<><>::uid://bl5wld8ve6i0g::::res://Textures/kenney_particle-pack/fire_01.png<>res://scripts/menu.gd<>uid://be38qajirbu8p::::res://Textures/UI/menu.png<>res://scripts/Start.gd<>uid://cbq6c6o3rp3d5::::res://Models/Scream.glb<>res://scripts/exit.gd<>uid://c2jycs7toodgx::::res://sounds/scbg.mp3<>uid://co1h4hd0ekggw::::res://sounds/223470__robinhood76__04938-spooky-metallic-ambient-noise-looping.wav
+player.tscn::PackedScene::6045660493871118714::1706441972::0::1::::<><>::res://scripts/player.gd<>uid://c520hu4oyqd4y::::res://sounds/ftstp2.wav
+scream.tscn::PackedScene::723598052462842154::1706441972::0::1::::<><>::res://scripts/scream.gd<>uid://bl5wld8ve6i0g::::res://Textures/kenney_particle-pack/fire_01.png<>uid://cbq6c6o3rp3d5::::res://Models/Scream.glb<>uid://lv4vywe63jgw::::res://sounds/sc1.mp3<>uid://bmsp5m1hq3xpb::::res://sounds/sc2.wav<>uid://6ki0bokvvgxo::::res://sounds/sc3.mp3<>uid://g6rlgee3tx0a::::res://sounds/sc4.wav
 tiles.tscn::PackedScene::5271974710735158546::1706383450::0::1::::<><>::uid://bu7h1fciyp3as::::res://Models/tiles.glb
-ui.tscn::PackedScene::8155719903319177930::1706391666::0::1::::<><>::uid://b3nj0er24b8x6::::res://Textures/UI/03.png<>uid://bljigcc5lsy3l::::res://Textures/UI/13.png<>uid://b1mt7b4j1g4kk::::res://Textures/UI/23.png<>uid://cm5b5bbwc5c76::::res://Textures/UI/33.png<>uid://b7t25jqtyc48o::::res://Textures/UI/e.png<>uid://bywwbkfjd0i62::::res://Textures/UI/3.png<>uid://dp51ues0iplwe::::res://Textures/UI/2.png<>uid://dafj2kc5dvusr::::res://Textures/UI/1.png<>uid://dhdj4es6xgcu3::::res://Textures/UI/face.png<>uid://uof2ebgw0os6::::res://Textures/UI/laugh.png<>uid://ci8er5mmv0b5y::::res://Textures/UI/scare.png<>uid://cedg5tt0hi1jf::::res://Textures/UI/spared.png<>uid://df88rvsp2umlx::::res://Textures/UI/dead.png<>uid://dvt22rt1x8vmd::::res://Textures/UI/no escape.png<>uid://c4t8bv73lvvxm::::res://Textures/UI/won.png<>uid://bedf7e0hhf5m4::::res://Textures/UI/intro.png
-won.tscn::PackedScene::6488670285228030805::1706392220::0::1::::<><>::uid://i4twug0f5fw::::res://scenes/won_UI.tscn
-won_UI.tscn::PackedScene::18310931622942512::1706392232::0::1::::<><>::uid://dogxrrvcshe4i::::res://scenes/ui.tscn<>res://won.gd
-World.tscn::PackedScene::5795331137529510121::1706391666::0::1::::<><>::res://scripts/World.gd<>uid://dahcolul45byn::::res://scenes/Labirynth.tscn<>uid://dogxrrvcshe4i::::res://scenes/ui.tscn
+ui.tscn::PackedScene::8155719903319177930::1706435988::0::1::::<><>::uid://b3nj0er24b8x6::::res://Textures/UI/03.png<>uid://bljigcc5lsy3l::::res://Textures/UI/13.png<>uid://b1mt7b4j1g4kk::::res://Textures/UI/23.png<>uid://cm5b5bbwc5c76::::res://Textures/UI/33.png<>uid://b7t25jqtyc48o::::res://Textures/UI/e.png<>uid://bywwbkfjd0i62::::res://Textures/UI/3.png<>uid://dp51ues0iplwe::::res://Textures/UI/2.png<>uid://dafj2kc5dvusr::::res://Textures/UI/1.png<>uid://dhdj4es6xgcu3::::res://Textures/UI/face.png<>uid://uof2ebgw0os6::::res://Textures/UI/laugh.png<>uid://ci8er5mmv0b5y::::res://Textures/UI/scare.png<>uid://cedg5tt0hi1jf::::res://Textures/UI/spared.png<>uid://df88rvsp2umlx::::res://Textures/UI/dead.png<>uid://dvt22rt1x8vmd::::res://Textures/UI/no escape.png<>uid://c4t8bv73lvvxm::::res://Textures/UI/won.png<>uid://bedf7e0hhf5m4::::res://Textures/UI/intro.png
+won.tscn::PackedScene::6488670285228030805::1706441972::0::1::::<><>::uid://i4twug0f5fw::::res://scenes/won_UI.tscn<>uid://c2jycs7toodgx::::res://sounds/scbg.mp3<>uid://co1h4hd0ekggw::::res://sounds/223470__robinhood76__04938-spooky-metallic-ambient-noise-looping.wav
+won_UI.tscn::PackedScene::18310931622942512::1706392236::0::1::::<><>::uid://dogxrrvcshe4i::::res://scenes/ui.tscn<>res://scripts/won.gd
+World.tscn::PackedScene::5795331137529510121::1706441972::0::1::::<><>::res://scripts/World.gd<>uid://dahcolul45byn::::res://scenes/Labirynth.tscn<>uid://dogxrrvcshe4i::::res://scenes/ui.tscn<>uid://c2jycs7toodgx::::res://sounds/scbg.mp3<>uid://co1h4hd0ekggw::::res://sounds/223470__robinhood76__04938-spooky-metallic-ambient-noise-looping.wav
 ::res://scripts/::1706340168
 altar.gd::GDScript::-1::1706390256::0::1::::<>Area3D<>::
 exit.gd::GDScript::-1::1706378164::0::1::::<>Button<>::
 menu.gd::GDScript::-1::1706376654::0::1::::<>Node3D<>::
-player.gd::GDScript::-1::1706390972::0::1::::<>CharacterBody3D<>::
-scream.gd::GDScript::-1::1706391534::0::1::::<>Node3D<>::
+player.gd::GDScript::-1::1706439382::0::1::::<>CharacterBody3D<>::
+scream.gd::GDScript::-1::1706441846::0::1::::<>Node3D<>::
 Start.gd::GDScript::-1::1706376196::0::1::::<>Button<>::
+won.gd::GDScript::-1::1706377172::0::1::::<>Control<>::
 World.gd::GDScript::-1::1706389490::0::1::::<>Node3D<>::
+::res://sounds/::1706436942
+223470__robinhood76__04938-spooky-metallic-ambient-noise-looping.wav::AudioStreamWAV::5809636180336312298::1706441446::1706441452::1::::<><>::
+ftstp2.wav::AudioStreamWAV::6935776397198415742::1706438692::1706438702::1::::<><>::
+ftstp.ogg::AudioStreamOggVorbis::5604555608360806087::1706438484::1706438530::1::::<><>::
+sc1.mp3::AudioStreamMP3::817228802086221654::1706440736::1706440786::1::::<><>::
+sc2.wav::AudioStreamWAV::3266810606416882971::1706440742::1706440786::1::::<><>::
+sc3.mp3::AudioStreamMP3::2197028385743218156::1706440746::1706440786::1::::<><>::
+sc4.wav::AudioStreamWAV::486180926353282950::1706440756::1706440788::1::::<><>::
+scbg.mp3::AudioStreamMP3::6687981320550399007::1706441310::1706441318::1::::<><>::
 ::res://Textures/::1706291004
+AmbientOcclusionMap.png::CompressedTexture2D::6032682815345211537::1706393564::1706394990::1::::<><>::
 Atlas.png::CompressedTexture2D::5468552382454523287::1706292864::1706300596::1::::<><>::
 Cobble.jpg::CompressedTexture2D::8332217914525368879::1706291646::1706291808::1::::<><>::
 Cobble_NM (1).png::CompressedTexture2D::3818128194183084096::1706291762::1706291808::1::::<><>::
+DisplacementMap.png::CompressedTexture2D::4117005272256985418::1706393592::1706394990::1::::<><>::
+NormalMap.png::CompressedTexture2D::8262091781224371990::1706393578::1706394992::1::::<><>::
+scream.png::CompressedTexture2D::5826894269419598919::1706393222::1706394990::1::::<><>::
+SpecularMap.png::CompressedTexture2D::7973017687648136066::1706393586::1706394992::1::::<><>::
 ::res://Textures/kenney_particle-pack/::1706304686
 circle_05.png::CompressedTexture2D::9019021277055605128::1573695354::1706304768::1::::<><>::
 fire_01.png::CompressedTexture2D::3221784923416380560::1573695354::1706304774::1::::<><>::
