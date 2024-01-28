@@ -29,7 +29,7 @@ func _ready():
 	player = get_tree().root.get_node("World/NavigationRegion3D/GridMap/player")
 	#play intro sound
 	UI.get_child(0).get_child(1).get_child(10).show()
-	await get_tree().create_timer(1.0).timeout
+	await get_tree().create_timer(5.0).timeout
 	UI.get_child(0).get_child(1).get_child(10).hide()
 	var output = []
 	OS.execute("C:/Users/mlabedzk/AppData/Local/Microsoft/WindowsApps/python3.10.exe",["d:/_KrakJam2024/Make a Face/MakeAFace/CameraProcessing/camera.py"],output)
@@ -148,7 +148,7 @@ func _on_body_enterd_area(body):
 		await get_tree().create_timer(0.5).timeout
 		UI.get_child(0).get_child(1).get_child(3).hide()
 		var error = float(o[0])
-		timerDeactivate = get_tree().create_timer(5.0)
+		timerDeactivate = get_tree().create_timer(15.0)
 		timerDeWasTimedOut = false
 		target = null
 		playerInArea = true

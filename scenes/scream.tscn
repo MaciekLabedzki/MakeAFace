@@ -118,19 +118,23 @@ transform = Transform3D(-2.8556e-08, 0, 0.653285, 0, 0.653285, 0, -0.653285, 0, 
 
 [node name="1" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("4_yr8vh")
+max_db = -5.0
 max_distance = 100.0
 
 [node name="2" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("5_5dqy2")
+max_db = -5.0
 max_distance = 100.0
 
 [node name="3" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("6_wufld")
+max_db = -5.0
 max_distance = 100.0
 
 [node name="4" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("7_mbpif")
 volume_db = -20.0
+max_db = -5.0
 autoplay = true
 max_distance = 100.0
 

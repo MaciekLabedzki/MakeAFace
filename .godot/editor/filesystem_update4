@@ -1,11 +1,7 @@
-res://scenes/Labirynth.tscn
-res://Models/tileset.tres
-res://scenes/altar.tscn
-res://scenes/menu.tscn
-res://scenes/player.tscn
-res://scenes/ui.tscn
 res://scenes/World.tscn
-res://scripts/player.gd
-res://scripts/scream.gd
+res://Models/tileset.tres
 res://scenes/scream.tscn
+res://scenes/Labirynth.tscn
+res://scenes/player.tscn
+res://scenes/menu.tscn
 res://scenes/won.tscn

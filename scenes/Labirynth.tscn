@@ -13,7 +13,7 @@ data = {
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="player" parent="." instance=ExtResource("2_vwfn8")]
-transform = Transform3D(0.356379, 0, 0.934341, 0, 1, 0, -0.934341, 0, 0.356379, 37.5121, 1, -10.6471)
+transform = Transform3D(0.998249, 0, 0.0591496, 0, 1, 0, -0.0591496, 0, 0.998249, 37.5121, 1, -10.6471)
 
 [node name="Scream" parent="." instance=ExtResource("3_b7pkr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.4042, 1.42414, -49.6091)
