@@ -1,7 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1706280658
 0.png::CompressedTexture2D::2053871715699886727::1706448448::1706448492::1::::<><>::
-export_presets.cfg::TextFile::-1::1706446548::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1706448518::0::1::::<><>::
+pythonPath.txt::TextFile::-1::1706448888::0::1::::<><>::
+::res://build/::1706448566
 ::res://CameraProcessing/::1706340768
 ::res://Models/::1706291966
 Scream.glb::PackedScene::4877947704599409020::1706394960::1706394992::0::::<><>::
@@ -22,7 +24,7 @@ tiles.tscn::PackedScene::5271974710735158546::1706383450::0::1::::<><>::uid://bu
 ui.tscn::PackedScene::8155719903319177930::1706435988::0::1::::<><>::uid://b3nj0er24b8x6::::res://Textures/UI/03.png<>uid://bljigcc5lsy3l::::res://Textures/UI/13.png<>uid://b1mt7b4j1g4kk::::res://Textures/UI/23.png<>uid://cm5b5bbwc5c76::::res://Textures/UI/33.png<>uid://b7t25jqtyc48o::::res://Textures/UI/e.png<>uid://bywwbkfjd0i62::::res://Textures/UI/3.png<>uid://dp51ues0iplwe::::res://Textures/UI/2.png<>uid://dafj2kc5dvusr::::res://Textures/UI/1.png<>uid://dhdj4es6xgcu3::::res://Textures/UI/face.png<>uid://uof2ebgw0os6::::res://Textures/UI/laugh.png<>uid://ci8er5mmv0b5y::::res://Textures/UI/scare.png<>uid://cedg5tt0hi1jf::::res://Textures/UI/spared.png<>uid://df88rvsp2umlx::::res://Textures/UI/dead.png<>uid://dvt22rt1x8vmd::::res://Textures/UI/no escape.png<>uid://c4t8bv73lvvxm::::res://Textures/UI/won.png<>uid://bedf7e0hhf5m4::::res://Textures/UI/intro.png
 won.tscn::PackedScene::6488670285228030805::1706448438::0::1::::<><>::uid://i4twug0f5fw::::res://scenes/won_UI.tscn<>uid://c2jycs7toodgx::::res://sounds/scbg.mp3<>uid://co1h4hd0ekggw::::res://sounds/223470__robinhood76__04938-spooky-metallic-ambient-noise-looping.wav
 won_UI.tscn::PackedScene::18310931622942512::1706392236::0::1::::<><>::uid://dogxrrvcshe4i::::res://scenes/ui.tscn<>res://scripts/won.gd
-World.tscn::PackedScene::5795331137529510121::1706448436::0::1::::<><>::res://scripts/World.gd<>uid://dahcolul45byn::::res://scenes/Labirynth.tscn<>uid://dogxrrvcshe4i::::res://scenes/ui.tscn<>uid://c2jycs7toodgx::::res://sounds/scbg.mp3<>uid://co1h4hd0ekggw::::res://sounds/223470__robinhood76__04938-spooky-metallic-ambient-noise-looping.wav
+World.tscn::PackedScene::5795331137529510121::1706448524::0::1::::<><>::res://scripts/World.gd<>uid://dahcolul45byn::::res://scenes/Labirynth.tscn<>uid://dogxrrvcshe4i::::res://scenes/ui.tscn<>uid://c2jycs7toodgx::::res://sounds/scbg.mp3<>uid://co1h4hd0ekggw::::res://sounds/223470__robinhood76__04938-spooky-metallic-ambient-noise-looping.wav
 ::res://scripts/::1706340168
 altar.gd::GDScript::-1::1706390256::0::1::::<>Area3D<>::
 exit.gd::GDScript::-1::1706378164::0::1::::<>Button<>::
