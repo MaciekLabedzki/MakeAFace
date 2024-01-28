@@ -67,7 +67,6 @@ func _process(_delta):
 			SPEED = 5.0
 			target = null
 			get_node("CollisionShape3D/CollisionShape3D").disabled = false
-	look_at(navAgent.get_next_path_position())
 	
 	#sound
 	if soundTimer:
@@ -83,6 +82,9 @@ func _process(_delta):
 			get_node("3").play()
 	else:
 		soundTimer = get_tree().create_timer(2)
+	
+	if timerDeWasTimedOut and not playerInArea:
+		look_at(navAgent.get_next_path_position())
 
 func _physics_process(delta):
 	if not target:

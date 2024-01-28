@@ -47,55 +47,55 @@ navigation_mesh = SubResource("NavigationMesh_lde67")
 [node name="GridMap" parent="NavigationRegion3D" instance=ExtResource("1_wcqd8")]
 
 [node name="Marker3D3" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 7.04142, 2.37218, -12.9782)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 8, 2.372, -14)
 
 [node name="Marker3D4" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -15.5921, 2.37218, -18.8195)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -12.5506, 2.372, -16.1685)
 
 [node name="Marker3D5" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -23.3254, 2.37218, -23.3625)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -19.6067, 2.372, -22.3202)
 
 [node name="Marker3D6" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -31.226, 2.37218, -23.3625)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -27.6966, 2.372, -23.382)
 
 [node name="Marker3D7" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -31.226, 2.37218, -10.5043)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -27.6867, 2.37218, -10.5043)
 
 [node name="Marker3D8" type="Marker3D" parent="NavigationRegion3D/GridMap"]
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -37.937, 2.37218, -10.5043)
 
 [node name="Marker3D9" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -37.937, 2.37218, -27.4891)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -34.2797, 2.37218, -26.1913)
 
 [node name="Marker3D10" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -41.8789, 2.37218, -36.8733)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -37.7497, 2.37218, -34.3958)
 
 [node name="Marker3D11" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -41.8789, 2.37218, -52.8352)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -37.2778, 2.37218, -52.8352)
 
 [node name="Marker3D12" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -34.3127, 2.37218, -78.3217)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -33.9588, 2.37218, -78.3217)
 
 [node name="Marker3D13" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -21.4349, 2.37218, -45.7066)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -17.8956, 2.37218, -48.3021)
 
 [node name="Marker3D14" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -21.4349, 2.37218, -52.6654)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -21.1989, 2.37218, -58.0924)
 
 [node name="Marker3D15" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -21.4349, 2.37218, -71.7038)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -21.4349, 2.37218, -72.0577)
 
 [node name="Marker3D16" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -10.6301, 2.37218, -71.7038)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -2.01773, 2.37218, -72.0577)
 
 [node name="Marker3D17" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -4.10866, 2.37218, -71.7038)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 12.0543, 2.37218, -74.0633)
 
 [node name="Marker3D18" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -4.10866, 2.37218, -63.0764)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -2.10304, 2.37218, -59.891)
 
 [node name="Marker3D19" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -4.10866, 2.37218, -43.3842)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -2.10304, 2.37218, -39.9629)
 
 [node name="Marker3D20" type="Marker3D" parent="NavigationRegion3D/GridMap"]
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 4.01594, 2.37218, -24.6502)
@@ -104,67 +104,67 @@ transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 18.6047, 2.37218, -17.689)
 
 [node name="Marker3D22" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 25.7192, 2.37218, -36.8507)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 25.7192, 2.37218, -34.1221)
 
 [node name="Marker3D23" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 34.8255, 2.37218, -18.6584)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 38.3656, 2.37218, -61.5446)
 
 [node name="Marker3D24" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 30.5245, 2.37218, -51.8515)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 32.1428, 2.37218, -49.0194)
 
 [node name="Marker3D25" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 10.0283, 2.37218, -45.8565)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 10.0283, 2.37218, -43.9347)
 
 [node name="Marker3D26" type="Marker3D" parent="NavigationRegion3D/GridMap"]
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 10.0283, 2.37218, -57.9115)
 
 [node name="Marker3D27" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 4.95349, 2.37218, -64.7094)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 6.57184, 2.37218, -63.9002)
 
 [node name="Marker3D28" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 7.92812, 2.37218, -84.5373)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 9.95105, 2.37218, -82.5144)
 
 [node name="Marker3D29" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 16.8718, 2.37218, -90.4296)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 16.8718, 2.37218, -88.4067)
 
 [node name="Marker3D30" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 12.2838, 2.37218, -76.6271)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -8.35016, 2.37218, -82.1902)
 
 [node name="Marker3D31" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 38.7121, 2.37218, -76.6271)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 38.2064, 2.37218, -75.7168)
 
 [node name="Marker3D32" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 38.1792, 2.37218, -84.3562)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 38.1792, 2.37218, -82.4344)
 
 [node name="Marker3D33" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 28.9041, 2.37218, -99.5037)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 32.2419, 2.37218, -96.975)
 
 [node name="Marker3D34" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 30.6865, 2.37218, -129.426)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 28.7647, 2.37218, -128.313)
 
 [node name="Marker3D35" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 20.5054, 2.37218, -129.426)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 20.5054, 2.37218, -128.212)
 
 [node name="Marker3D36" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 20.5054, 2.37218, -122.569)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 22.5283, 2.37218, -122.569)
 
 [node name="Marker3D37" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 13.8973, 2.37218, -122.569)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 15.4145, 2.37218, -122.569)
 
 [node name="Marker3D38" type="Marker3D" parent="NavigationRegion3D/GridMap"]
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 13.8973, 2.37218, -88.174)
 
 [node name="Marker3D39" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 9.19405, 2.37218, -83.2293)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 10.1044, 2.37218, -83.2293)
 
 [node name="Marker3D40" type="Marker3D" parent="NavigationRegion3D/GridMap"]
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 9.19405, 2.37218, -73.9246)
 
 [node name="Marker3D41" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -2.76574, 2.09805, -65.2578)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -2.07769, 2.09805, -66.2211)
 
 [node name="Marker3D42" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 37.2858, 2.09805, -75.946)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 38.2491, 2.09805, -75.946)
 
 [node name="Marker3D43" type="Marker3D" parent="NavigationRegion3D/GridMap"]
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 10.0367, 2.09805, -75.946)
@@ -176,7 +176,7 @@ transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 18.4933, 2.09805, -88.1612)
 
 [node name="Marker3D46" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -1.12138, 2.09805, -94.5036)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -1.53421, 2.09805, -94.5036)
 
 [node name="Marker3D47" type="Marker3D" parent="NavigationRegion3D/GridMap"]
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 11.7985, 2.09805, -106.366)
@@ -185,16 +185,22 @@ transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 15.9093, 2.09805, -122.34)
 
 [node name="Marker3D49" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 0.405504, 2.09805, -118.229)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -0.00732255, 2.09805, -118.229)
+
+[node name="Marker3D57" type="Marker3D" parent="NavigationRegion3D/GridMap"]
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -20.3735, 2.09805, -120.156)
+
+[node name="Marker3D58" type="Marker3D" parent="NavigationRegion3D/GridMap"]
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, -34.6848, 2.09805, -120.156)
 
 [node name="Marker3D50" type="Marker3D" parent="NavigationRegion3D/GridMap"]
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 22.3693, 2.09805, -121.753)
 
 [node name="Marker3D51" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 22.3693, 2.09805, -128.8)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 21.5436, 2.09805, -127.974)
 
 [node name="Marker3D52" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 28.4768, 2.09805, -128.8)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 28.4768, 2.09805, -127.8)
 
 [node name="Marker3D53" type="Marker3D" parent="NavigationRegion3D/GridMap"]
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 31.7655, 2.09805, -124.807)
@@ -206,7 +212,7 @@ transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515
 transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 31.7655, 2.09805, -101.551)
 
 [node name="Marker3D56" type="Marker3D" parent="NavigationRegion3D/GridMap"]
-transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 37.5207, 2.09805, -82.0536)
+transform = Transform3D(1, 0, 0, 0, 0.999515, 0.0311491, 0, -0.0311491, 0.999515, 38.0711, 2.09805, -82.0536)
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("4_5uwd1")

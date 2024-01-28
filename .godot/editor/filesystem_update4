@@ -1,2 +1,8 @@
-res://scenes/scream.tscn
+res://scenes/World.tscn
 res://Models/tileset.tres
+res://scenes/Labirynth.tscn
+res://scenes/player.tscn
+res://scenes/scream.tscn
+res://scenes/menu.tscn
+res://scenes/won.tscn
+res://scripts/scream.gd
